@@ -1,18 +1,36 @@
 import "../styles/index.scss";
-import Recipes from "./Recipes";
 import spool from "../images/pipespool.png";
 
 const App = () => {
   return (
     <>
-      <section className="hero"></section>
-      <main>
-        <section>
-          <h1>Industrial Technology</h1>
+      <header>
+        <section className="navbar">
+          <div className="container flex">
+            <h1 className="logo">Loruki</h1>
+            <nav>
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="features.html">Features</a>
+                </li>
+                <li>
+                  <a href="docs.html">Docs</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </section>
-        <img class="spool" src={spool} alt="spool" width="250" />
-        <Recipes />
-      </main>    
+      </header>
+      <main>
+        <section className="showcase">
+          <div className="container grid">
+            
+          </div>
+        </section>
+      </main>
     </>
   );
 };
