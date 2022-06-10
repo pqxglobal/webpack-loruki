@@ -1,5 +1,4 @@
 import "../styles/index.scss";
-import spool from "../images/pipespool.png";
 
 const App = () => {
   return (
@@ -88,6 +87,83 @@ const App = () => {
               </div>
             </div>
           </section>
+          <section className="cli">
+            <div className="container grid">
+              <img src={ require("../images/cli.png") } alt="cli" />
+              <div className="card">
+                <h3>Easy to use, cross platform CLI</h3>
+              </div>
+              <div className="card">
+                <h3>Deploy in seconds</h3>
+              </div>
+            </div>
+          </section>
+          <section className="cloud bg-primary my-2 py-2">
+            <div className="container grid">
+              <div className="text-center">
+                <h2 className="lg">Extreme Cloud Hosting</h2>
+                <p className="lead my-1">Cloud hosting like you've never seen. Fast, efficient and scalable</p>
+                <a href="features.html" className="btn btn-dark">Read More</a>
+              </div>
+              <img src={ require("../images/cloud.png") } alt="cloud" />
+            </div>
+          </section>
+          <section className="languages">
+            <h2 className="md text-center my-2">
+              Supported Languages
+            </h2>
+            <div className="container flex">
+              <div className="card">
+                <h4>Node.js</h4>
+                <img src={ require("../images/logos/node.png") } alt="node js logo" />
+              </div>
+              <div className="card">
+                <h4>Python</h4>
+                <img src={ require("../images/logos/python.png") } alt="python logo" />
+              </div>
+              <div className="card">
+                <h4>C#</h4>
+                <img src={ require("../images/logos/csharp.png") } alt="c sharp logo" />
+              </div>
+              <div className="card">
+                <h4>Ruby</h4>
+                <img src={ require("../images/logos/ruby.png") } alt="ruby logo" />
+              </div>
+              <div className="card">
+                <h4>PHP</h4>
+                <img src={ require("../images/logos/php.png") } alt="php logo" />
+              </div>
+              <div className="card">
+                <h4>Scala</h4>
+                <img src={ require("../images/logos/scala.png") } alt="scala logo" />
+              </div>
+              <div className="card">
+                <h4>Clojure</h4>
+                <img src={ require("../images/logos/clojure.png") } alt="clojure logo" />
+              </div>
+            </div>
+          </section>
+          <footer className="footer bg-dark py-5">
+            <div className="container grid grid-3">
+              <div>
+                <h1>Loruki</h1>
+                <p>Copyright &copy; 2022</p>
+              </div>
+              <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="features.html">Features</a></li>
+                  <li><a href="docs.html">Docs</a></li>
+                </ul>
+              </nav>
+              <div className="social">
+                <a href="#"><i className="fab fa-github fa-2x"></i></a>
+                <a href="#"><i className="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i className="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i className="fab fa-twitter fa-2x"></i></a>
+              </div>
+            </div>
+          </footer>
       </main>
     </>
   );
